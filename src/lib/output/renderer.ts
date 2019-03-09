@@ -110,6 +110,13 @@ export class Renderer extends ChildableComponent<Application, RendererComponent>
     })
     toc!: string[];
 
+    @Option({
+        name: 'highlightjsStyle',
+        help: 'Path to the css file containing highlightjs styles.',
+        type: ParameterType.String
+    })
+    highlightjsStyle: string | undefined;
+
     /**
      * Create a new Renderer instance.
      *

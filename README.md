@@ -97,6 +97,8 @@ in order to change the behaviour of TypeDoc.
   Specifies the fully qualified name of the root symbol. Defaults to global namespace.
 * `--gitRevision <revision|branch>`<br>
   Use specified revision or branch instead of the last revision for linking to GitHub source files.
+* `--highglightjsStyle <path/to/style-file.css>`<br>
+  Path to the css file containing highlightjs styles.
 
 #### Content
 * `--includes <path/to/includes>`<br>

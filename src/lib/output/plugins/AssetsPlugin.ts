@@ -44,5 +44,11 @@ export class AssetsPlugin extends RendererComponent {
         if (from !== fromDefault && FS.existsSync(from)) {
             FS.copySync(from, to);
         }
+
+        const highlightjsToFilePath = Path.join(event.outputDirectory, 'assets', 'css', 'highlightjs.css');
+
+        if (event.settings.highlightjsStyle && FS.existsSync(highlightjsToFilePath)) {
+            FS.copySync(event.settings.highlightjsStyle, highlightjsToFilePath);
+        }
     }
 }
